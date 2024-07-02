@@ -35,7 +35,7 @@ const perguntas = [
             ]
         },
         {
-            enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?
+            enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
         
             alternativas: [
                 "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
@@ -58,4 +58,22 @@ const perguntas = [
         }
     ]
     
+    let atual = 0;
+    let perguntaAtual;
+    
+    function mostraPergunta() {
+        perguntaAtual = perguntas[atual];
+        caixaPerguntas.textContent = perguntaAtual.enunciado;
+        mostraAlternativas();
+    }
+    function mostraAlternativas() {
+        for(const alternativa of perguntaAtual.alternativas) {
+            const botaoAlternativas = document.createElement("button");
+            botaoAlternativa.textContent = alternativa;
+        
+        }
+    }
+    
+    mostraPergunta();
+              
     
