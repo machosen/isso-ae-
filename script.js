@@ -7,7 +7,7 @@ const perguntas = [
     {
     enunciado: "Pergunta 1",
     alternativas: [
-        "Alternativa 1",
+        "Alternativa 1",90
         "Alternativa 2"
     ]
 },
